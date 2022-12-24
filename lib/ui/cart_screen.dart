@@ -463,7 +463,7 @@ class CartScreen extends StatelessWidget {
               const SizedBox(
                 height: 10.0,
               ),
-              Row(
+              Obx(() => Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
@@ -471,11 +471,11 @@ class CartScreen extends StatelessWidget {
                     style: kTextStyle.copyWith(color: kSubTitleColor),
                   ),
                   Text(
-                    '৳45.00',
+                    '৳${controller.savedPrice.toString()}',
                     style: kTextStyle.copyWith(color: kSubTitleColor),
                   ),
                 ],
-              ),
+              )),
               const SizedBox(
                 height: 10.0,
               ),

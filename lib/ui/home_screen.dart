@@ -52,6 +52,7 @@ class HomeScreen extends StatelessWidget {
               height: 100.0,
               child: TextField(
                 keyboardType: TextInputType.name,
+                readOnly: true,
                 decoration: InputDecoration(
                   filled: true,
                   fillColor: kDarkWhiteColor,
@@ -67,6 +68,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
+            const SizedBox(height: 10.0,),
             ListView.builder(
               itemCount: medicineList.length,
               shrinkWrap: true,
